@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Adventure Extreme</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LEVEL SELECT SCREEN -->
+<div id="level-select">
+  <h1>Adventure Extreme</h1>
+  <div class="level-buttons">
+    <button class="level-button" data-level="1">Level 1</button>
+    <button class="level-button" data-level="2">Level 2</button>
+    <button class="level-button" data-level="3">Level 3</button>
+    <button class="level-button" data-level="4">Level 4</button>
+    <button class="level-button" data-level="5">Level 5</button>
+  </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="game" style="display:none;">
+  <div id="scoreboard">Score: 0</div>
+  <canvas id="gameCanvas"></canvas>
+  <button id="jump-button">Jump</button>
+</div>
+
+<!-- FINISH SCREEN -->
+<div id="finish-screen" style="display:none;">
+  <h1>Level Completed!</h1>
+  <p id="final-score"></p>
+  <button id="btn-back">Back to Level Select</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
